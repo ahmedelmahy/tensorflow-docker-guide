@@ -4,6 +4,10 @@ Get multiple versions of tensorflow running on your computer
 ## start docker (In case it's not running)
 sudo systemctl start docker
 
+## run docker commands without sudo 
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
 ## start and stop a running container (tf2container is the name of the running container)
 docker start -a tf2container  (-a will make the jupyter output in your terminal :D)
 docker stop tf2container
